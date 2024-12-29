@@ -25,9 +25,8 @@ export const SingUp = () => {
   } = useForm({ resolver: yupResolver(schema) });
 
   const submitOnRegister = (data) => {
-    localStorage.setItem('user', 'user name');
-    navigate("/main-page");
-    console.log(data);
+    localStorage.setItem('isLogged', 'true');
+    navigate("/");
   };
 
   const handleEye = () => {
